@@ -1,11 +1,10 @@
 # SJP
-Simple Java Project
 
-Example project for demo purposes of using:
+Simple Java Project for demo purposes of using:
 
-- Github
-- SonarQube (SonarCloud)
-- Travis CI
+- [Github](https://github.com/Expleo/SJP)
+- [SonarCloud](https://sonarcloud.io/organizations/expleo)
+- [Travis CI](https://travis-ci.org/github/Expleo/SJP)
 
 Programming errors are made intentionaly to show the different kinds of reports available in SonarQube, e.g.:
 
