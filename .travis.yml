@@ -1,0 +1,14 @@
+dist: trusty
+sudo: required
+addons:
+  sonarcloud:
+    organization: "expleo"
+    token:
+      secure: "azCvY31ELCqEa3njBJnGHUFPAZey75g+J1zB8dx4KKjpZQre67ex6BMtPLbZZRPlkIcZ3zCulgKwRgh9mdo8Gc2FE/QiKgxwxVjl48phonDwalEofEt+DVDYcZ3XLnhOA/HFF7eZxQY0FHQblO30+MCS53Fu/z1U0c5uHc6kuJ62T5J8WzuqT13OBaw/yteWGveFocEnAy/hHlX6NmX6dLm/G37wM6kcdWhPbQYHW15YztyAyDiQfXfl27v+rF3gwWXrHxewtUU6z5zDz2jJU5KXLFh5o2HEc9OWEmtzkseh5uslxlqnckQtX34FffUq0E8HZibtSIBFoKzR3dvp1ESgC2JTkTiI2vInJDt31j1YrayQ9mg3gDGpzxzjoKNezNbhSiyUsCwMIwCgR20Qt+xOFbLyzDrKzlBfmEMvOw4+R6laTzIuLIgcX/NhhtkrgQrKxQ2WwQPv0P8dQ/oeBCGXTJb/KI/NKi3/wNCxGNUIRr4QMO7DKvcHfWUx1VyqEesMpOscWYafNLUuH/JhtR0NYLzBmnPuM6qJgiO+vRjMWSMq74EInYA3Iu2RrnaGcH45CAwCTcgYjiPF5VZ31AdDRETQBIXBaUpRwhjwi17o5R9j6/R0aoJ0+n1vKvwnE8slLQg05h+jKY+QUSbb270oZgyTEjXLKiAZkPbLgC0="
+jdk:
+- openjdk11
+script:
+- mvn clean install sonar:sonar -Dsonar.projectKey=SJP -Dmaven.test.failure.ignore=true
+cache:
+  directories:
+  - "$HOME/.sonar/cache"
