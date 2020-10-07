@@ -4,11 +4,11 @@ addons:
   sonarcloud:
     organization: "expleo"
     token:
-      secure: "kTDr2C71cVWfO2wsbLSCmpT8LITU56ECKoI0ulgSYTehpLh1sIpZVPbsxPndkGkAITxlMc5q58Xr59GPB5fI2+7aEKFAbaMdN/F2eKj6yM+vc+pfPeFaCMveBykx+cP7ivw0mkRc558UkDOyThKPua3hBXF2hTEQu/oiiCHo7m5kAazN9hut1Ooyorj4CZ7YZpcJvI29VtcwbMx7RSjAnNz4kKGBzMzcMB6Py99ooKiey+z5i9+EpHl0+rm5NZKymv18gL/Qf+kqo7d7JUvWEGXlMf82Xb/f60MLrmOdENyqargZt6LA53iqLz2xoFKFvamxl0ka1BxSK/EyAe3s382diqNIeT/uiO/505fGZMWLqRtit9WVpmM/RWgBvs5vH6DrHZbV7esFST4BENBo+OrurRKhIRMAqgv3LX7JhBuVQsjAohcISGI8ZJ3vM/pbtNVVVR4JSgvaYLasYztu/ANCQKPYTV72x5MnU1tT15oH+LXLt1ssNqvibBM7llYFHub+6gu/It8wDtqhrtrSeyaJbeyc9/y71lpxg9YnqntZEX6ybo/bLkPkysEy+kfqkVw64ZpujwC81ipr3ilNT/X4SIgoaYt9JH1O8MZF3H70egQQhhcFjKkz+xKbkgmJ1SAvXwvwnfRiuFUJTVVpbuzfy+OEBzyeREzF0MMrzqQ="
+      secure: "1ua5/WudW3/9zeey29UTPwFSeS/bFPnzZexJHgv53R8zjfidsu0p2CgIw8/I0foPnpWKUrrMUOUoZr3wKKzM9Yg8Uhr5yu8EjCtEHt+PLKkWbZeJ3VCttUg7paBI4pMGIq80A7F6PJUun9rim5n0RjZtYdCAS9Tjr9wMXrWnat1fk3zDEK7v00oZa+bWQSdPBmY3uTzeVD825ozFTaSbWjg+/PmYJVuh8acSIcJNb7HDB4X2sqEDdtWr9IIC8igbK448Gchr1kulbIjiYFfABR7FAEZoPCrCuIVk6PfETEMrT9JTd+LKCBvKswNUJpTcYJrXIfTqMCzp+jyKj6jUZFqGHQjDPYcBGYbigAtQWTDI7OIvf7x8kG28FNxRYpEE4b6drm1Guf5a1ayuif1qnFsH7K3sCUahkZlSpmkt8Lw8PoxSrrbRm5aVBDeEubNgQIR4iyU3eMgHe7LFWNiKY0hnIIpekHHtOl1uCg6dfapn0QVuo6u2Tj5OiA4c7muammhOOpt/uwJ0LcPO5UPoiOR03kaYvlXt1lU/ZPymHrEO/f+v5H7ErFliL6g/+OcDTyWy8iCwqw/4TO2jm7Bt497FFHGHJ28It7XGxDlNoPtYbJh1+32NmahsV+n92XLuu2/1Oeu4YMS0l4kHK63BO9XBv409qdD4cJILYzDKmKk="
 jdk:
 - openjdk11
 script:
-- mvn clean install sonar:sonar -Dsonar.projectKey=SJP -Dmaven.test.failure.ignore=true
+- mvn clean install sonar:sonar -Dsonar.projectKey=Expleo_SJP -Dmaven.test.failure.ignore=true
 cache:
   directories:
   - "$HOME/.sonar/cache"
