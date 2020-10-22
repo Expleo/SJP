@@ -1,5 +1,7 @@
 # SJP
 
+[![Build Status](https://travis-ci.org/Expleo/SJP.svg?branch=main)](https://travis-ci.org/github/Expleo/SJP)
+
 Simple Java Project for demo purposes of using:
 
 - [Github](https://github.com/Expleo/SJP)
